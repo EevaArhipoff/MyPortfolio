@@ -1,5 +1,5 @@
 # MyPortfolio
- Introduction to me and my projects. 
+ Introduction to me and my projects. Click to access [the main page](https://eevaarhipoff.github.io/MyPortfolio/).
 
  This Portfolio page includes pictures and stories of my projects done in school and at free time.
 
