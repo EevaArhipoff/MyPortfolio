@@ -181,6 +181,10 @@ input, select, textarea {
 		text-decoration: none;
 	}
 
+	a.linksInText {
+		color: #f3a8f3;
+	}
+
 		a:hover {
 			border-bottom-color: transparent;
 			color: #ffffff !important;
@@ -2475,8 +2479,8 @@ input, select, textarea {
 			padding-bottom: 0.5em;
 		}
 		.profilePic {
-			width: 10em;
-			height: 10em;
+			width: auto;
+			height: 12em;
 			border-radius: 50%;
 			margin: 0.5em 0.5em 0 0.5em;
 		}
