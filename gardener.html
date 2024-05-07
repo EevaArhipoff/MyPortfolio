@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Penan Puutarha</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+				<header id="header">
+					<h1><a href="index.html">Etusivulle</a></h1>
+					<nav>
+						<a class="fa fa-linkedin-square" href="https://www.linkedin.com/in/eeva-arhipoff" style="font-size:36px"></a>
+						<a class="fa fa-github" href="https://www.github.com/EevaArhipoff" style="font-size:36px"></a>
+					</nav>
+				</header>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Penan Puutarha</h2>
+								<p>Penan Puutarhassa mentiin taas vähän pidemmälle kuin tehtävän suorittamiseen olisi vaadittu. Mutta näitähän käy kun innostuu.. Tuloksena on sivusto, jolla asiakas voi tehdä tilauksen puutarhatöistä. Työt jakelee Pena pomon ominaisuudessa työntekijöilleen, joita hän voi myös lisätä. Määrätystä työstä lähetetään sähköposti työntekijälle. Työntekijä voi sitten katsella omia töitään, ja saa ohessa API:n avustuksella tietää kohteen sääennusteen. Niinpä tietää ottaa sadevarusteet tai aurinkorasvan mukaan työkalupakkiin. Taustakuvana toimii kasvi-API:sta satunnaisesti valittu kuva, josta löytää lisätietoa alareunan linkistä. Näin kaikki käyttäjät voivat samalla opetella lisää kasveista. Lisäksi työssä on suoritettu kirjautujan autentikointi, jolla ohjataan kukin käyttäjäryhmä omalle sivulleen. </p>
+                                <p>Sivuston ulkoasu tässä projektissa ei kuulunut arvostelun piiriin, tärkeämpää oli luoda hyvä toiminnallisuus. Projektissa harjoiteltiin myös saavutettavuutta. Saavutettavuus täytyi yhden valitun sivun osalta saada vastaamaan vähintään AA-standardeja. Sivu tehtiin myös täysin soveltuvaksi ruudunlukijan kanssa käytettäväksi.</p>
+                                <p>Tätä projektia oli todella mukava tehdä (kiitos ryhmäkavereille: Anne Arhipoff ja Eiri Laaksonen). Opettajatkin antoivat täydet pisteet niin itse projektista, kuin saavutettavuudestakin. Tämä oli nyt kakkosvuoden opiskeluiden viimeinen palautettava työ, ja voi kyllä sanoa, että voi todella hyvin mielin siirtyä kesälomalle!</p>
+									  <img class="mainpic" src="images/PenaTyotilaus.png" alt="Penan työtilauksen täyttämislomake" />
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+									<h3 class="major" >Projektin aikana käytetty:</h3>
+                                    <ul>
+                                        <li>Javascript</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>MongoDB</li>
+                                        <li>Node.js</li>
+										<li>Express</li>
+                                        <li>Handlebars</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
+                                    <h2>Kuvia projektin sivuista</h2>
+                                    <section class="features">
+                                        <article>
+											<img class="image" src="images/PenanTyotilaus.png" alt="Asiakkaan näkymä" />
+											<p>Asiakas syöttää tietonsa ja tilaa halutut työt.</p>
+										</article>
+										<article>
+											<img class="image" src="images/PenaAdmin.png" alt="Puutarhan admin-sivu" />
+											<p>Pomo voi lisätä ja poistaa työntekijöitä sekä muokata heidän tietojaan.</p>
+										</article>
+										<article>
+											<img class="image" src="images/PenaAssignWork.png" alt="Määrää työ taulukko" />
+											<p>Pomo määrittää työntekijän, joka suorittaa työtilauksen. Työntekijävalikossa näkyy vain työntekijät, joille ei vielä kyseisellä päivämäärällä ole määritelty töitä.</p>
+										</article>
+                                        <article>
+											<img class="image" src="images/PenaGardener.png" alt="Työntekijän näkymä" />
+											<p>Työntekijä voi katsella tulevia töitään, ja saa samalla ennusteen kohteen säästä.</p>
+										</article>
+									</section>
+									<h2 class="major">Minun päävastuulla projektissa oli etusivun lisäksi:</h2>
+									<h3 class="major">Työtilaus</h3>
+									<p>Projektissa aloitin tekemällä työtilauksen mahdollistavan lomakkeen. Suoritin myös validoinnit lomakkeen tiedoille. Tiedot sanitoidaan ja valitoidaan lomaketta lähetettäessä. Jos ilmenee virheitä, sivu ladataan uudelleen annettujen tietojen ja virheilmoitusten kanssa. Hyväksytysti täytetyt tiedot tallennetaan tietokantaan. Tämä sivu valikoitui myös käytettäväksi saavutettavuus tehtävässä, joten sivu täyttää WCAG:n mukaisen tason AA-standardin. Sivu on täydellisesti käytettävissä ilman hiirtä ja toimii mainiosti myöskin ruudunlukijalla.</p>
+                                    <img class="mainpic" src="images/PenaValidation.png" alt="Validointivirheiden näkyminen lomakkeella">
+									<h3 class="major">Kasvi API</h3>
+                                    <p>Projektissa pääsin myös terästämään muistia API:n käytön kanssa. Sivustolle haetaan taustakuvaksi satunnaisella Id:llä kuva kasvista. Jos sivuston käyttäjää kiinnostaa kuvan kasvi, voi siitä saada lisätietoa footerista löytyvästä linkistä. Linkki ohjaa sivulle, josta löytyy lisätietoa taustakuvana olevasta kasvista.</p>
+									<img class="mainpic" src="images/PenaPlantInfo.png" alt="Lisää tietoa kasvista sivu" />
+								</div>
+							</div>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
