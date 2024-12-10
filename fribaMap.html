@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>FribaMap</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html">Etusivulle</a></h1>
+            <nav>
+                <a class="fa fa-linkedin-square" href="https://www.linkedin.com/in/eeva-arhipoff"
+                    style="font-size:36px"></a>
+                <a class="fa fa-github" href="https://www.github.com/EevaArhipoff" style="font-size:36px"></a>
+            </nav>
+        </header>
+
+        <!-- Wrapper -->
+        <section id="wrapper">
+
+            <header>
+                <div class="inner">
+                    <a href="https://www.fribago.com/" target="_blank">
+                        <h2>FribaMap</h2>
+                    </a>
+                    <p><a href="fribago.html" class="linksInText" target="blank">FribaGo</a>
+                        web-sovelluksen käyttäjät ovat esittäneet toiveita heittopituuksien tallentamisesta sekä
+                        kartasta, jolla voidaan on paikantaa pelissä tiin ja korin sijainti. Niinpä FribaGoa tehnyt
+                        tiimimme näki tilaisuutensa tulleen ja lähti toteuttamaan näitä toiveita
+                        Mobile Programming-kurssilla. <br></br>
+                        Taas tuli tehtyä
+                        enemmän kuin vaadittiin tehtävänannossa, mutta näinhän siinä on aina käynyt.. Opettajalta tuli
+                        kehuja, loistava arvosana ja pyyntö tehdä esittelyvideo sovelluksesta ensi vuosien
+                        kurssilaisille. Kiitos ja
+                        kumarrus jälleen tiimitovereille loistavasti sujuneesta yhteistyöstä: <a
+                            href="https://www.linkedin.com/in/anne-arhipoff" class="linksInText" target="blank">Anne
+                            Arhipoff</a>, <a href="https://www.linkedin.com/in/antti-mutanen-b72981261"
+                            class="linksInText" target="blank">Antti Mutanen</a> (idean isä) ja <a
+                            href="https://www.linkedin.com/in/marinieminen1001101" class="linksInText"
+                            target="blank">Mari
+                            Nieminen</a>. Tästä on hyvä taasen jatkaa laajentamista!<br></br>
+                        FribaMap yhdistettiin olemassaolevaan FribaGon tietokantaan, joten mobiilissa rekisteröityvä
+                        käyttäjä voi käyttää myös nettisovellusta ja toisinpäin. Näin myös voidaan aloittaa peli
+                        web-sovelluksessa, ja saadaan sama kierros näkymään myös mobiilin
+                        kartassa.</p></br>
+
+                    <!-- Teknologiat -->
+                    <div class="inner">
+                        <h3 class="major">Projektin aikana käytetty:</h3>
+                        <ul>
+                            <li>React-Native</li>
+                            <li>Android Studio</li>
+                            <li>Git</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>CSS</li>
+                            <li>MySQL/ PHPMyAdmin</li>
+                            <li>SQLLite</li>
+                            <li>Jira, Confluence</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="major">Aloitus</h3>
+                    <section class="features">
+                        <article>
+                            <img class="image" src="images/FribaMap/SignIn.png" alt="Sign In page" />
+                            <p>Sovelluksen käynnistyksen jälkeen on mahdollista kirjautua siään tai rekisteröityä
+                                käyttäjäksi. Rekisteröitymislomake avautuu erilliseen modaaliin.</p>
+                        </article>
+                        <article>
+                            <img class="image" src="images/FribaMap/Ohjeet.png" alt="Instructions page" />
+                            <p>Sovelluksen alavalikosta löytyy ohjesivu, jossa on kerrottu sovelluksen käytöstä.</p>
+                        </article>
+                    </section>
+
+                    <h3 class="major">Rekisteröityminen</h3>
+                    <p>Rekisteröitymisessä hyödynnettiin Nativen form-hookin käyttöä.</p>
+                    <section class="features">
+                        <article>
+                            <img class="image" src="images/FribaMap/Register.png" alt="Registeration page" />
+                            <p>Rekisteröitymislomakkeen aputekstit auttavat tietojen syötössä. Muotoilu on hyvin
+                                pitkälti tehty jäljittelemään FribaGon rekisteröinnin ulkonäköä.. </p>
+                        </article>
+                        <article>
+                            <img class="image" src="images/FribaMap/RegValid.png" alt="Validation in Registeration" />
+                            <p>Validoinneista ja sanitoinneista huolehdittiin Reactin tarjoamien työkalujen avulla,
+                                mutta myös jo FribaGoon aiemmin luotujen funktioiden avulla. App ei päästä etenemään
+                                ennen kuin kaikki kentätä on hyväksytysti täytetty. Virheen aiheuttaja on kerrottu
+                                aputeksteissä.</p>
+                        </article>
+                        <article>
+                            <img class="image" src="images/FribaMap/PopUpTietoSuoja.png"
+                                alt="PopUp of missing acceptance in Privacy Policy  " />
+                            <p>Ennen lopullista tehtävänpalautusta tuli opettajalta palautetta, että voisiko reactin
+                                omat alert-ikkunat
+                                muuttaa nätimmiksi. Tein sitten custom-componentin, jolla sovelluksen ulkoasun
+                                mukaisesti voidaan nyt näyttää ilmoituksia missä tahansa sovelluksen sisällä. </p>
+                        </article>
+                        <article>
+                            <img class="image" src="images/FribaMap/PopSuccessReg.png"
+                                alt="PopUp of succesful registeration." />
+                            <p>Onnistuneen rekisteröinnin jälkeen käyttäjälle ilmoitetaan onnistuneesta
+                                rekisteröinnistä. Tämän jälkeen ohjaudutaan kirjautumissivulle. Samalla
+                                rekisteröitymisellä voi käyttää
+                                mobiilipalvelun lisäksi myös
+                                alkuperäistä FribaGo-sovellusta.</p>
+                        </article>
+                    </section>
+
+                    <h3 class="major">Kartta</h3>
+                    <p>Kartta toteutettiin Google Cloudista käyttöönotetun palvelun avulla.</p>
+                    <section class="features">
+                        <article>
+                            <img class="image" src="images/FribaMap/MapEmpty.png" alt="Map view" />
+                            <p>Jos pelaaja ei ole aloittanut peliä millään radalla, tai tiin ja korin sijainnit ovat
+                                tuntemattomat, näkymä on tämä. Pelaaja voi kävellä tiin tai korin luo ja merkata niiden
+                                sijainnit napeilla. </p>
+                        </article>
+                        <article>
+                            <img class="image" src="images/FribaMap/MapMarkers.png"
+                                alt="Map view with users location and ongoing fairwaynumber." />
+                            <p>Jos pelaaja on aloittanut kierroksen FribaGossa jollain radalla, näkyy meneillään väylä
+                                kartalla käyttäjän sijainnin lisäksi. Siirryttäessä toiselle väylälle radalla, voidaan
+                                väylän riedot päivittää ylhäällä olevasta napista. Jos väylän tii ja kori on jo
+                                tallennettuna tietokantaan, näytetään niiden markerit myös kartalla.</p>
+                        </article>
+                        <article>
+                            <img class="image" src="images/FribaMap/MapOwnLoc.png"
+                                alt="Map view with location of tee and basket." />
+                            <p>Kun tiin tai korin sijainti on tiedossa, näkyy alhaalla lasketut etäisyydet niihin.
+                                Lisäksi näytetään myös tulos sitä mukaa, kun tietoja heitoista syötetään FribaGossa.</p>
+                        </article>
+                        <article>
+                            <img class="image" src="images/FribaMap/ThrowLengthPop.png"
+                                alt="PopUp shows length of first throw." />
+                            <p>Edellisessä kuvassa näkyi myös nappi, jolla voidaan tallentaa ensimmäisen heiton pituus
+                                saavuttaessa kohtaan, johon heitto laskeutui. Heiton pituus näytetään käyttäjälle napin
+                                painalluksen jälkeen.</p>
+                        </article>
+                    </section>
+
+                    <h3 class="major">Profiilisivu</h3>
+                    <p>Profiilisivulla käyttäjä voi tuttuun tapaan katsella ja päivittää omia tietojaan.</p>
+                    <section class="features">
+                        <article>
+                            <img class="image" src="images/FribaMap/Profile.png" alt="Profile page" />
+                            <p>Tällä profiilisivulla näkyy omat tiedot. Tietoja voi haluttaessa muokata ja täydentää
+                                avautuvassa muokkausikkunassa, jossa vanhat tiedot ovat esitäytettyinä.</p>
+                        </article>
+                        <article>
+                            <img class="image" src="images/FribaMap/PieChart.png"
+                                alt="Piechart showing players throw lengths." />
+                            <p>Kaikkien pelaajan syöttämien aloitusheittojen pituus tallennetaan myös tietokantaan.
+                                Syötetyistä heitoista luodaan kaavio, jossa näkyy heittojen jakautuminen. Myös kaikkien
+                                aikojen pisin aloitusheitto on näkyvillä.</p>
+                        </article>
+                    </section>
+
+                </div>
+            </header>
+
+
+
+        </section>
+
+        <!-- Footer -->
+
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
